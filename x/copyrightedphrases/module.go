@@ -75,8 +75,6 @@ type AppModule struct {
 	AppModuleBasic
 
 	keeper keeper.Keeper
-	// TODO: Add keepers that your application depends on
-
 }
 
 // NewAppModule creates a new AppModule object
@@ -133,7 +131,7 @@ func (am AppModule) ExportGenesis(ctx sdk.Context) json.RawMessage {
 
 // BeginBlock returns the begin blocker for the copyrightedphrases module.
 func (am AppModule) BeginBlock(ctx sdk.Context, req abci.RequestBeginBlock) {
-	BeginBlocker(ctx, req, am.keeper)
+	//nothing
 }
 
 // EndBlock returns the end blocker for the copyrightedphrases module. It returns no validator

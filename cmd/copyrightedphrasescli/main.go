@@ -35,10 +35,8 @@ func main() {
 
 	app.SetConfig()
 
-	// TODO: setup keybase, viper object, etc. to be passed into
 	// the below functions and eliminate global vars, like we do
 	// with the cdc
-
 	rootCmd := &cobra.Command{
 		Use:   "copyrightedphrasescli",
 		Short: "Command line interface for interacting with copyrightedphrasesd",
