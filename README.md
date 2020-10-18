@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/vrazdalovschi/copyrighted-phrases.svg?branch=main)](https://travis-ci.com/vrazdalovschi/copyrighted-phrases)
 # copyrighted-phrases
 
 A blockchain application using cosmos-sdk that is a 'copyrighted phrases' registry.
