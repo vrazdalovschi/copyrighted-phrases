@@ -45,6 +45,6 @@ func handleMsgRegisterText(ctx sdk.Context, keeper keeper.Keeper, msg types.MsgR
 	}
 	keeper.Logger(ctx).Debug(fmt.Sprintf("Register text %s for owner %v", msg.Text, msg.Owner))
 
-	keeper.CreateCopyrightedText(ctx, types.Texts{Value: msg.Text, Owner: msg.Owner})
+	keeper.CreateCopyrightedText(ctx, types.Texts{Value: msg.Text, Owner: msg.Owner, Block: ctx.BlockHeight()})
 	return &sdk.Result{}, nil
 }

@@ -13,12 +13,7 @@ var MinNamePrice = sdk.Coins{sdk.NewInt64Coin("nametoken", 1)}
 type Texts struct {
 	Value string         `json:"value" yaml:"value"`
 	Owner sdk.AccAddress `json:"owner" yaml:"owner"`
-	//TODO Block int64 `json:"block" yaml:"block"`
-}
-
-// NewTexts returns a new Texts with the minprice as the price
-func NewTexts() Texts {
-	return Texts{}
+	Block int64          `json:"block" yaml:"block"`
 }
 
 // implement fmt.Stringer
